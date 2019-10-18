@@ -387,7 +387,9 @@ open class KSTokenView: UIView {
    fileprivate func _commonSetup() {
       backgroundColor = UIColor.clear
       clipsToBounds = true
-      _tokenField = KSTokenField(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
+     // _tokenField = KSTokenField(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
+    
+    _tokenField = KSTokenField(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: 50))
       _tokenField.textColor = UIColor.black
       _tokenField.isEnabled = true
       _tokenField.tokenFieldDelegate = self
